@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>To Do List</header>
+        
+        <div class="content">
+            <div>
+                
+            </div>
+            <div class="column">
+                <div class="column_header"><h1>New Task</h1></div>
+                    <div class="column_body">
+                        <input type="text" id="task_name" name="task_name" placeholder="Add task...">
+                        <input type="date">
+                        <input type="time">
+                        <input type="text" id="assign" name="assign" placeholder="Assign to...">
+                        <button class="add_button">Add</button>
+                    </div>
+            </div>
+
+            <div class="column">
+                <div class="column_header"><h1>Past Due</h1></div>
+                    <div class="column_body">
+                            <ul id="past_due_tasks_list" class="cards_list">
+                                <li class="task_card">Task 1</li>
+                                <li>Task 2</li>
+                                <li>Task 3</li>
+                            </ul>
+                    </div>
+            </div>
+
+            <div class="column">
+                <div class="column_header"><h1>Completed</h1></div>
+                    <div class="column_body">
+                            <ul id="completed_tasks_list" class="cards_list">
+                                <li class="task_card">Task 1</li>
+                                <li>Task 2</li>
+                                <li>Task 3</li>
+                            </ul>
+                    </div>
+            </div>
+
+            <div class="column">
+                <div class="column_header"><h1>Pending</h1></div>
+                    <div class="column_body">
+                            <ul id="pending_tasks_list" class="cards_list">
+                                <li class="task_card">Task 1<button>Check</button></li>
+                                <li>Task 2</li>
+                                <li>Task 3</li>
+                            </ul>
+                    </div>
+            </div>
+            <div class="task_columns">
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="Scripts\index.js"></script>
+</body>
+</html>
