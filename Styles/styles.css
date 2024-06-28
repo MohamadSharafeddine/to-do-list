@@ -3,7 +3,14 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-style: italic; */
+    font-style: italic;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
 header {
     background-color: #60DBD4;
@@ -24,6 +31,7 @@ header {
     align-items: center;
     padding: 50px;
     gap: 30px;
+
 
 }
 
@@ -84,24 +92,40 @@ button:active {
 
 ul li {
     list-style: none;
-    /* cursor: pointer; */
 }
 
 .task_card {
     display: flex;
     justify-content: space-around;
+    text-align: center;
     width: 100%;
     gap: 20px
 }
 
 .cards_list {
     width: 100%;
+    text-align: center;
 }
 
 #past_due_tasks_list li {
     color: grey;
 }
 
-#completed_tasks_list li {
-    text-decoration: line-through;
+
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li span{
+    right: 0;
+    font-size: 22px;
+    color: red;
+    line-height: 40px;
+    text-align: right;
+}
+
+ul li span:hover{
+    background-color: #edeef0
 }
